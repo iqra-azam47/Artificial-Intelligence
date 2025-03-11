@@ -1,1 +1,242 @@
+Python 3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+print ("Hello world!")
+Hello world!
+
+x=1
+if x>0:
+    print ("Value of x is greater than 0")
+
+    
+Value of x is greater than 0
+print ("Statement 1")
+Statement 1
+print ("Statement 2")
+Statement 2
+
+#Above statements can be written as
+print ("Statement 1"); print ("Statement 2")
+Statement 1
+Statement 2
+
+
+x=1
+if x>0
+SyntaxError: expected ':'
+if x>0:
+print ("Value of x is greater than 0")
+SyntaxError: expected an indented block after 'if' statement on line 1
+
+# Above Statement throughs an error because there is no indentation
+
+if x>0:
+ print("Single space indentation")
+
+ 
+Single space indentation
+if x>0:
+    print ("Single Tab Indentation")
+
+    
+Single Tab Indentation
+
+if x>0
+SyntaxError: expected ':'
+
+if x>0:
+     print ("Single space + tab indentation")
+
+     
+Single space + tab indentation
+
+
+x=109
+type(x)
+<class 'int'>
+
+y=-100
+type(y)
+<class 'int'>
+
+t=0.07
+type(t)
+<class 'float'>
+
+w=0
+type(w)
+<class 'int'>
+
+j=-11.7
+type(j)
+<class 'float'>
+
+e=1.64e-24
+type(e)
+<class 'float'>
+
+k=5E22
+type(k)
+<class 'float'>
+
+#Complex Numbers Representation
+a=complex(2,3)
+type(a)
+<class 'complex'>
+print (a)
+(2+3j)
+
+z=1+3j
+type(z)
+<class 'complex'>
+print (z)
+(1+3j)
+
+#Boolean Type
+x=True
+type(x)
+<class 'bool'>
+print(x)
+True
+
+y=False
+type(y)
+<class 'bool'>
+print(y)
+False
+
+
+#Strings
+str1="String1"
+print (str1)
+String1
+
+str2="String2"
+print (str2)
+String2
+
+str3="String3'
+SyntaxError: unterminated string literal (detected at line 1)
+#Above statement throws error because string starts with double quotes and end with single
+
+str4='String4"
+SyntaxError: unterminated string literal (detected at line 1)
+#Throws error because starts with single quote and end with double quotes
+
+str5="String'5"
+print (str5)
+String'5
+
+str6='String"6'
+print (str6)
+String"6
+
+
+#Special Characters in Strings
+
+#Backslash
+print ("This is backslash (\\) sign")
+This is backslash (\) sign
+
+#Tab
+    
+print ("This is tab \t key")
+This is tab 	 key
+
+#Single quotes
+print ("These are \'Single quotes\'")
+These are 'Single quotes'
+
+#Double quotes
+print ("These are \"Double Quotes\"")
+These are "Double Quotes"
+
+#NewLine
+print ("This is a newline\nNewline")
+This is a newline
+Newline
+
+
+#Accessing String Elements
+str1="IQRA AZAM"
+print (str1[0])
+I
+
+print(str[-9])
+Traceback (most recent call last):
+  File "<pyshell#115>", line 1, in <module>
+    print(str[-9])
+TypeError: type 'str' is not subscriptable
+print(str1[-9])
+I
+
+print(str1[8])
+M
+
+print(str1[-1])
+M
+
+print (str1[6])
+Z
+
+print (str1[11])   #Throws error because index is out of range
+Traceback (most recent call last):
+  File "<pyshell#124>", line 1, in <module>
+    print (str1[11])   #Throws error because index is out of range
+IndexError: string index out of range
+
+
+#Lists
+
+my_list=[1,2,3,4]   #Contains all integers
+print(my_list)
+[1, 2, 3, 4]
+
+my_list=['red','blue','green']  #Contains all string values
+print (my_list)
+['red', 'blue', 'green']
+
+my_list=['red',11,34.9]  #Contains different type values
+print(my_list)
+['red', 11, 34.9]
+
+my_list=[]
+print (my_list)
+[]
+
+#Accessing list index
+color_index=['Red','Blue','Green']
+color_index[0]
+'Red'
+
+print(color_index[1],color_index[2])
+Blue Green
+
+color_list[-1]
+Traceback (most recent call last):
+  File "<pyshell#147>", line 1, in <module>
+    color_list[-1]
+NameError: name 'color_list' is not defined
+
+color_index[-1]
+'Green'
+
+color_index[4]   #Throws error because index is out of range
+Traceback (most recent call last):
+  File "<pyshell#151>", line 1, in <module>
+    color_index[4]   #Throws error because index is out of range
+IndexError: list index out of range
+
+
+#List Slicing
+name_list=["Zain","Sharjil","Hamza","Aurang","Ammar"]
+print (name_list[1:2])
+['Sharjil']
+print (name_list[0:3])
+['Zain', 'Sharjil', 'Hamza']
+print (name_list[:4])
+['Zain', 'Sharjil', 'Hamza', 'Aurang']
+print (name_list[1:-2])
+['Sharjil', 'Hamza']
+print (name_list[:])
+['Zain', 'Sharjil', 'Hamza', 'Aurang', 'Ammar']
 
