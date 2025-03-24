@@ -1,1 +1,140 @@
+# WHILE LOOP
+count=0
+while(count<3):
+    count=count+1
+    print("Hello Greek")
 
+
+#Single Statement While Block
+count=0
+# while(count==0): print("Hello Greek")
+# This will cause an infinite printing 
+
+
+
+# for in LOOP
+
+# Iterating over the list
+
+print("List Iteration")
+l = ["greeks","for","greeks"]
+for i in l:
+    print(i)
+
+# Iterating Over a Tuple
+print("Tuple Iteration")
+t = ("greeks","for","greeks")
+for i in t:
+    print(i)
+
+# Iterating Over a String
+print("String Iteration")
+string = "Greeks"
+for i in string:
+    print(i)
+
+
+# Iterating By Index Of Sequences
+list = ["greeks","for","greeks"]
+for index in range(len(list)):
+    print(list[index])
+
+
+#Loop Control Statements
+
+# Continue Statement
+
+for letter in 'greeksforgreeks':
+    if letter=='e' or letter=='s':
+        continue
+    print ('Current letter:',letter)
+
+# Break Statement
+for letter in 'greeksforgreeks':
+    if letter=='e' or letter=='s':
+        break
+    print('Current Letter:',letter)
+
+
+# PYTHON FUNCTIONS
+
+# DeFINING
+def my_fun():
+    print("Hello from a function")
+
+# Calling
+my_fun()
+
+
+#Parameters
+def my_function(name):
+    print(name + 'Azam')
+
+my_function("Iqra")
+my_function("Zanib")
+my_function("Tahreem")
+
+# Default Parameter Value
+def my_fun(country="Pakistan"):
+    print('I am from '+country)
+
+my_fun("Iran")
+my_fun("China")
+my_fun()
+
+# Passing list as parameters
+def my_fun(food):
+    for x in food:
+        print(x)
+
+fruits = ["Apple","Mango","PineApple","Orange"]
+my_fun(fruits)
+
+
+# Return Values From Function
+def my_fun(x):
+    return 5+x
+
+print(my_fun(2))
+print(my_fun(5))
+
+
+# KeyWord Arguments
+def my_fun(c3,c2,c1):
+    print('The youngest child is '+c3)
+
+my_fun(c1="Iqra",c2="Zanib",c3="Tahreem")
+
+
+# PYTHON CLASSES AND OBJECTS
+
+# CREATING CLASS
+class MyClass: x = 5
+
+# CREATING OBJECT
+p1 = MyClass()
+print(p1.x)
+
+# THE _init_() FUNCTION
+class Person:
+    def __init__(self,name,age):
+      self.name=name
+      self.age=age
+
+p1=Person("John",18)
+print(p1.name)
+print(p1.age)
+
+
+# OBJECT METHODS
+class Person:
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+
+    def my_fun(self):
+        print("Hello my name is "+self.name)
+
+
+p1 = Person("John",36)
+p1.my_fun()
